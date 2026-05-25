@@ -1,0 +1,14 @@
+{
+  "name": "hades-release-index",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-manifest.mjs",
+    "validate": "node scripts/build-manifest.mjs --check",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1"
+  }
+}
