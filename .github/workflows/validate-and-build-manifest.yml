@@ -1,0 +1,46 @@
+name: Validate And Build Manifest
+
+on:
+  pull_request:
+    paths:
+      - "entries/**"
+      - "schema/**"
+      - "scripts/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/validate-and-build-manifest.yml"
+  push:
+    paths:
+      - "entries/**"
+      - "schema/**"
+      - "scripts/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/validate-and-build-manifest.yml"
+
+jobs:
+  validate-and-build:
+    runs-on: ubuntu-latest
+    env:
+      HADES_RELEASE_INDEX_REPOSITORY: HADESforCode/hades-release-index
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test
+
+      - name: Validate and rebuild manifest
+        run: npm run build
+
+      - name: Ensure manifest is up to date
+        run: git diff --exit-code -- manifest.json

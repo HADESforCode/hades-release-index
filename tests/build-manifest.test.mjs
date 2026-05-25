@@ -177,3 +177,23 @@ test("repository manifest matches the seeded easywrite entry", () => {
     }
   ]);
 });
+
+test("README documents repository responsibilities and local validation", () => {
+  const readme = fs.readFileSync("README.md", "utf8");
+
+  assert.match(readme, /仓库职责/);
+  assert.match(readme, /如何本地验证/);
+  assert.match(readme, /GitHub Releases assets/);
+});
+
+test("workflow validates and rebuilds manifest on push and PR", () => {
+  const workflow = fs.readFileSync(
+    ".github/workflows/validate-and-build-manifest.yml",
+    "utf8"
+  );
+
+  assert.match(workflow, /pull_request:/);
+  assert.match(workflow, /push:/);
+  assert.match(workflow, /npm run build/);
+  assert.match(workflow, /git diff --exit-code -- manifest\.json/);
+});
