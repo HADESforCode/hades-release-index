@@ -1,22 +1,38 @@
 {
   "name": "EasyWrite",
   "slug": "easywrite",
-  "summary": "A focused writing tool.",
-  "status": "beta",
-  "featured": true,
-  "version": "0.1.4",
-  "websiteUrl": "https://example.com/products/easywrite",
-  "releaseNotesUrl": "https://github.com/HADESforCode/EasyWrite/releases/tag/v0.1.4",
-  "coverImage": "/images/products/easywrite-cover.jpg",
-  "updatedAt": "2026-05-25T12:00:00.000Z",
+  "summary": "Desktop writing and note-taking app with quick capture, search, markdown export, and tray shortcuts.",
+  "status": "alpha",
+  "featured": false,
+  "version": "0.1.6",
+  "websiteUrl": "https://github.com/HADESforCode/hades-release-index/releases",
+  "releaseNotesUrl": "https://github.com/HADESforCode/hades-release-index/releases/tag/easywrite-v0.1.6",
+  "coverImage": "https://placehold.co/1200x630/png?text=EasyWrite",
+  "updatedAt": "2026-05-26T05:28:09.449Z",
   "platforms": [
+    {
+      "os": "linux",
+      "arch": "x64",
+      "downloadUrl": "https://github.com/HADESforCode/hades-release-index/releases/download/easywrite-v0.1.6/EasyWrite_0.1.0_amd64.AppImage",
+      "fileName": "EasyWrite_0.1.0_amd64.AppImage",
+      "sha256": "41cbb0346bd6e2cf1b2b38af0763e0ddc87c9c0c92bc0d2d055b8854b8efd674",
+      "size": 80996856
+    },
+    {
+      "os": "macos",
+      "arch": "arm64",
+      "downloadUrl": "https://github.com/HADESforCode/hades-release-index/releases/download/easywrite-v0.1.6/EasyWrite_0.1.0_aarch64.dmg",
+      "fileName": "EasyWrite_0.1.0_aarch64.dmg",
+      "sha256": "3f995b1236581d44a127b412abadbc47ab500f25b2f797af93e23f2283e3f3e4",
+      "size": 5169968
+    },
     {
       "os": "windows",
       "arch": "x64",
-      "downloadUrl": "https://github.com/HADESforCode/hades-release-index/releases/download/easywrite-v0.1.4/EasyWrite-Setup.exe",
-      "fileName": "EasyWrite-Setup.exe",
-      "sha256": "abc123",
-      "size": 12345678
+      "downloadUrl": "https://github.com/HADESforCode/hades-release-index/releases/download/easywrite-v0.1.6/EasyWrite_0.1.0_x64-setup.exe",
+      "fileName": "EasyWrite_0.1.0_x64-setup.exe",
+      "sha256": "069572cfc85f345a99834582c303d71073560f9eb06c7608b1a887b381f8e51d",
+      "size": 3483964
     }
   ]
 }
