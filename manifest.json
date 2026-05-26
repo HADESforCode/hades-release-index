@@ -4,7 +4,7 @@
     "slug": "easywrite",
     "summary": "Desktop writing and note-taking app with quick capture, search, markdown export, and tray shortcuts.",
     "status": "alpha",
-    "featured": false,
+    "featured": true,
     "version": "0.1.6",
     "websiteUrl": "https://github.com/HADESforCode/hades-release-index/releases",
     "releaseNotesUrl": "https://github.com/HADESforCode/hades-release-index/releases/tag/easywrite-v0.1.6",

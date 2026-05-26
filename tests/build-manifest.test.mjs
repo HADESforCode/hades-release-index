@@ -149,33 +149,11 @@ test("repository manifest matches the seeded easywrite entry", () => {
   assert.equal(result.status, 0, result.stderr);
 
   const manifest = JSON.parse(fs.readFileSync("manifest.json", "utf8"));
+  const easywriteEntry = JSON.parse(
+    fs.readFileSync(path.join("entries", "easywrite.json"), "utf8")
+  );
 
-  assert.deepEqual(manifest, [
-    {
-      name: "EasyWrite",
-      slug: "easywrite",
-      summary: "A focused writing tool.",
-      status: "beta",
-      featured: true,
-      version: "0.1.4",
-      websiteUrl: "https://example.com/products/easywrite",
-      releaseNotesUrl:
-        "https://github.com/HADESforCode/EasyWrite/releases/tag/v0.1.4",
-      coverImage: "/images/products/easywrite-cover.jpg",
-      updatedAt: "2026-05-25T12:00:00.000Z",
-      platforms: [
-        {
-          os: "windows",
-          arch: "x64",
-          downloadUrl:
-            "https://github.com/HADESforCode/hades-release-index/releases/download/easywrite-v0.1.4/EasyWrite-Setup.exe",
-          fileName: "EasyWrite-Setup.exe",
-          sha256: "abc123",
-          size: 12345678
-        }
-      ]
-    }
-  ]);
+  assert.deepEqual(manifest, [easywriteEntry]);
 });
 
 test("README documents repository responsibilities and local validation", () => {
