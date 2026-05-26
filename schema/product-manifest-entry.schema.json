@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hadesforcode.github.io/hades-release-index/schema/product-manifest-entry.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "slug",
+    "summary",
+    "status",
+    "featured",
+    "version",
+    "websiteUrl",
+    "releaseNotesUrl",
+    "coverImage",
+    "updatedAt",
+    "platforms"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": ["alpha", "beta", "stable", "archived"]
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "websiteUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "releaseNotesUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "coverImage": {
+      "type": "string",
+      "minLength": 1
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "platforms": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["os", "arch", "downloadUrl", "fileName", "sha256", "size"],
+        "properties": {
+          "os": {
+            "type": "string",
+            "enum": ["windows", "macos", "linux"]
+          },
+          "arch": {
+            "type": "string",
+            "enum": ["x64", "arm64"]
+          },
+          "downloadUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "fileName": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "minLength": 1
+          },
+          "size": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    }
+  }
+}
