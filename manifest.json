@@ -5,35 +5,35 @@
     "summary": "Desktop writing and note-taking app with quick capture, search, markdown export, and tray shortcuts.",
     "status": "alpha",
     "featured": true,
-    "version": "1.0.0",
+    "version": "1.0.1",
     "websiteUrl": "https://github.com/HADESforCode/hades-release-index/releases",
-    "releaseNotesUrl": "https://github.com/HADESforCode/hades-release-index/releases/tag/easywrite-v1.0.0",
+    "releaseNotesUrl": "https://github.com/HADESforCode/hades-release-index/releases/tag/easywrite-v1.0.1",
     "coverImage": "https://placehold.co/1200x630/png?text=EasyWrite",
-    "updatedAt": "2026-05-27T05:52:10.547Z",
+    "updatedAt": "2026-05-27T08:26:26.100Z",
     "platforms": [
       {
         "os": "linux",
         "arch": "x64",
-        "downloadUrl": "https://github.com/HADESforCode/hades-release-index/releases/download/easywrite-v1.0.0/EasyWrite_1.0.0_amd64.AppImage",
-        "fileName": "EasyWrite_1.0.0_amd64.AppImage",
-        "sha256": "12b10e97e1f28e89c5cf8c994e0fb4550af6331c795bf33bd1cd0036ac9ea8e3",
+        "downloadUrl": "https://github.com/HADESforCode/hades-release-index/releases/download/easywrite-v1.0.1/EasyWrite_1.0.1_amd64.AppImage",
+        "fileName": "EasyWrite_1.0.1_amd64.AppImage",
+        "sha256": "c549ea40dee6bcfe9f52ac14746d6b77f56319e0d31d67ea142a25412c28f1f7",
         "size": 81013240
       },
       {
         "os": "macos",
         "arch": "arm64",
-        "downloadUrl": "https://github.com/HADESforCode/hades-release-index/releases/download/easywrite-v1.0.0/EasyWrite_1.0.0_aarch64.dmg",
-        "fileName": "EasyWrite_1.0.0_aarch64.dmg",
-        "sha256": "6726237f724f90d6f1ace51fa4cb547cdddfd092b2c3c4137ffcd45383eea256",
-        "size": 5157136
+        "downloadUrl": "https://github.com/HADESforCode/hades-release-index/releases/download/easywrite-v1.0.1/EasyWrite_1.0.1_aarch64.dmg",
+        "fileName": "EasyWrite_1.0.1_aarch64.dmg",
+        "sha256": "d1a8a12d6086c78cbc1b16ad7032c6041ea343c2a96849155314f7991396bfaf",
+        "size": 5155532
       },
       {
         "os": "windows",
         "arch": "x64",
-        "downloadUrl": "https://github.com/HADESforCode/hades-release-index/releases/download/easywrite-v1.0.0/EasyWrite_1.0.0_x64-setup.exe",
-        "fileName": "EasyWrite_1.0.0_x64-setup.exe",
-        "sha256": "90bb2777c772114f45ae812405a5e05935d11a02abb64a1d94899e39d405bd79",
-        "size": 3478272
+        "downloadUrl": "https://github.com/HADESforCode/hades-release-index/releases/download/easywrite-v1.0.1/EasyWrite_1.0.1_x64-setup.exe",
+        "fileName": "EasyWrite_1.0.1_x64-setup.exe",
+        "sha256": "799a4cc7e60bb26361160276b1bc7aad6dfa13349ce203948e7bced9f145e5e3",
+        "size": 3476297
       }
     ]
   }
